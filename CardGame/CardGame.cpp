@@ -1,5 +1,6 @@
 #include <iostream>
 #include "Card.h"
+#include "Deck.h"
 
 using namespace std;
 
@@ -10,4 +11,11 @@ int main()
 
 	cout << aceOfHearts.toString() << endl;
 	cout << aceOfSpades.toString() << endl;
+
+	Deck myDeck = Deck();
+	Card test = myDeck.Draw();
+	Card test2 = myDeck.Draw();
+	Card test3 = myDeck.Draw();
+
+	cin.get();
 }
